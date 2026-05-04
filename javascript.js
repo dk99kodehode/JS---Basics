@@ -94,20 +94,18 @@ håndterer alle tilfeller korrekt.
 // Skriv koden for oppgave 4 her
 
 let userName = "Daniel";
-let userAge = 20;
-let userIsBlocked = false;
+let userAge = 14;
+let userIsBlocked = true;
 let goToPage = "";
 
-if (userAge >= 18 && userIsBlocked == false) {
+if (!userName) {
+  console.log("Missing crucial credientals");
+} else if (userAge >= 18 && userIsBlocked === false) {
   console.log("You can drive, we roadtripping now!");
-
-  if (userAge <= 18 || userIsBlocked == true) {
-    console.log("You can't drive unlucky, get to practicing!");
-  }
-
-  if (!userName) {
-    console.log("Missing crucial credientals");
-  }
+} else if (userAge <= 18 || userIsBlocked === true) {
+  console.log("You can't drive unlucky, get to practicing!");
+} else {
+  console.log("Something unexpteed happened");
 }
 
 /******************************************************************************
@@ -129,5 +127,5 @@ const userMale = true;
 
 // Skriv koden for oppgave 5 her'
 
-const userGender = userMale ? "Mr" : "Mrs" ;
-console.log(userGender)
+const userGender = userMale ? "Mr" : "Mrs";
+console.log(userGender);
