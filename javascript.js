@@ -94,19 +94,23 @@ håndterer alle tilfeller korrekt.
 // Skriv koden for oppgave 4 her
 
 let userName = "Daniel";
-let userAge = 14;
-let userIsBlocked = true;
-let goToPage = "";
+let userAge = 20;
+let userIsBlocked = false;
+let goToPage = "/home";
+let userIsLoggedIn = false;
 
-if (!userName) {
-  console.log("Missing crucial credientals");
-} else if (userAge >= 18 && userIsBlocked === false) {
-  console.log("You can drive, we roadtripping now!");
-} else if (userAge <= 18 || userIsBlocked === true) {
-  console.log("You can't drive unlucky, get to practicing!");
+if (userName !== "" && userAge >=18 && userIsBlocked === false) {
+  userIsLoggedIn = true
+  goToPage = "/home"
+  console.log("Welcome" + " " +  userName + " " + "You got lucky this time!")
+} else if (userAge < 18 || userIsBlocked === true) {
+  console.log("You can't drive. Unlucky!");
 } else {
-  console.log("Something unexpteed happened");
+  console.log("Something unexpected happened");
 }
+
+
+
 
 /******************************************************************************
 OPPGAVE 5
