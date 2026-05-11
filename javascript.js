@@ -102,7 +102,7 @@ let userIsLoggedIn = false;
 if (userName !== "" && userAge >=18 && userIsBlocked === false) {
   userIsLoggedIn = true
   goToPage = "/home"
-  console.log("Welcome" + " " +  userName + " " + "You got lucky this time!")
+  console.log(`Welcome ${userName}!, You got lucky this time!`)
 } else if (userAge < 18 || userIsBlocked === true) {
   console.log("You can't drive. Unlucky!");
 } else {
