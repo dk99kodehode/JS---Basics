@@ -56,10 +56,10 @@ console.log("We love fruits");
 let num1 = 420;
 let num2 = 69;
 
-console.log(num1 + num2);
-console.log(num1 - num2);
-console.log(num1 * num2);
-console.log(num1 % num2);
+console.log(`${num1} + ${num2} = ${num1 + num2}`);
+console.log(`${num1} - ${num2} = ${num1 - num2}`);
+console.log(`${num1} * ${num2} = ${num1 * num2}`);
+console.log(`${num1} % ${num2} = ${num1 % num2}`);
 
 console.log("Strawberry is a fruit");
 let counter = 2;
@@ -131,5 +131,5 @@ const userMale = true;
 
 // Skriv koden for oppgave 5 her'
 
-const userGender = userMale ? "Mr" : "Mrs";
+const userGender = `${userMale ? "Mr." : "Mrs."}`;
 console.log(userGender);
